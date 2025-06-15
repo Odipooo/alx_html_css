@@ -67,3 +67,33 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
+.quote-section {
+  background-color: #f4f7fa; /* Use the exact background color from Figma */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quote-section blockquote {
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quote-section blockquote::before,
+.quote-section blockquote::after {
+  content: '"';
+  font-size: 3rem;
+  vertical-align: top;
+  color: #ccc;
+}
+
+.quote-section footer {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+}
